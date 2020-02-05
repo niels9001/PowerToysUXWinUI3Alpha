@@ -1,0 +1,28 @@
+﻿<Page
+    x:Class="PowerToysSettingsWinUI3Alpha.Views.PowerRename"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PowerToysSettingsWinUI3Alpha.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+     xmlns:muxc="using:Microsoft.UI.Xaml.Controls"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <ScrollViewer>
+            <StackPanel Orientation="Vertical" Margin="14,0,14,48">
+                <TextBlock Text="A Windows Shell Extension for more advanced bulk renaming using search and replace or regular expressions." Style="{StaticResource BodyTextBlockStyle}"/>
+                <HyperlinkButton x:Name="OverviewBtn" Content="Overview" />
+                <TextBlock Text="Shell integration" Style="{StaticResource SubtitleTextBlockStyle}" Margin="0,34,0,8"/>
+                <ToggleSwitch Header="Show on default context menu" IsOn="True" Margin="0,14,0,0" />
+                <ToggleSwitch Header="Only show on extended context menu (Shift + Right-click)" IsOn="False" Margin="0,14,0,0"  />
+                <TextBlock Text="Miscellaneous" Style="{StaticResource SubtitleTextBlockStyle}" Margin="0,34,0,8"/>
+                <ToggleSwitch Header="Enable autocomplete and autosuggest of recently used inputs for search and replace values" IsOn="True" Margin="0,14,0,0" />
+                <ToggleSwitch Header="Restore search, replace and flags values on launch from previous run" IsOn="True" Margin="0,14,0,0" />
+                <TextBox Text="10" InputScope="Number"  Header="Maximum numbers of items to show in recently used list"  HorizontalAlignment="Left" Margin="0,14,0,0" />
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
+

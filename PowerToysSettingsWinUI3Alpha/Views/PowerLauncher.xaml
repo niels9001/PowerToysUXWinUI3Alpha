@@ -1,0 +1,46 @@
+﻿<Page
+    x:Class="PowerToysSettingsWinUI3Alpha.Views.PowerLauncher"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PowerToysSettingsWinUI3Alpha.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <ScrollViewer>
+            <StackPanel Orientation="Vertical" Margin="14,0,14,48">
+                <TextBlock Text="A quick launcher that has additional capabilities without sacrificing performance" Style="{StaticResource BodyTextBlockStyle}"/>
+                <HyperlinkButton x:Name="OverviewBtn" Content="Overview" />
+                <TextBlock Text="Search &amp; results" Style="{StaticResource SubtitleTextBlockStyle}" Margin="0,34,0,8"/>
+                <ComboBox Header="Search result preference" SelectedIndex="0" MinWidth="240" Margin="0,14,0,0">
+                    <ComboBoxItem>Most commonly used</ComboBoxItem>
+                    <ComboBoxItem>Most recently used</ComboBoxItem>
+                    <ComboBoxItem>Alphabetical order</ComboBoxItem>
+                    <ComboBoxItem>Running processes/opened applications</ComboBoxItem>
+                </ComboBox>
+                <ComboBox Header="Search type preference" SelectedIndex="0" MinWidth="240" Margin="0,14,0,0">
+                    <ComboBoxItem>Application name</ComboBoxItem>
+                    <ComboBoxItem>A string that is contained in the application</ComboBoxItem>
+                    <ComboBoxItem>Executable name</ComboBoxItem>
+                </ComboBox>
+                <TextBox Text="4" Header="Maximum numbers of results"  HorizontalAlignment="Left" MinWidth="240" Margin="0,14,0,0"/>
+
+
+                <TextBlock Text="Default apps" Style="{StaticResource SubtitleTextBlockStyle}" Margin="0,34,0,8"/>
+                <ComboBox Header="Shell" SelectedIndex="0" MinWidth="240" Margin="0,14,0,0">
+                    <ComboBoxItem>PowerShell</ComboBoxItem>
+                </ComboBox>
+                <ComboBox Header="Terminal" SelectedIndex="0" MinWidth="240" Margin="0,14,0,0">
+                    <ComboBoxItem>Windows Console</ComboBoxItem>
+                </ComboBox>
+                <TextBlock Text="Shortcuts" Style="{StaticResource SubtitleTextBlockStyle}" Margin="0,34,0,8"/>
+                <ToggleSwitch Header="Override Win+R key" IsOn="True" Margin="0,14,0,0"/>
+                <ToggleSwitch Header="Override Win+S key" IsOn="True" Margin="0,14,0,0"/>
+
+
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>

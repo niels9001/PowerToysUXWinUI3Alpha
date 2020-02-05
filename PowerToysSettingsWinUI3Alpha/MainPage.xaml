@@ -1,0 +1,57 @@
+﻿<Page
+    x:Class="PowerToysSettingsWinUI3Alpha.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PowerToysSettingsWinUI3Alpha"
+     xmlns:WinUI="using:Microsoft.UI.Xaml.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+     
+        <WinUI:NavigationView x:Name="NavView" IsSettingsVisible="False" Margin="0,0,0,0" IsBackButtonVisible="Collapsed" IsBackEnabled="False" SelectionChanged="NavView_SelectionChanged" Header="Header"
+                             IsPaneToggleButtonVisible="False"
+                             IsTitleBarAutoPaddingEnabled="True"
+                           
+                             
+    AlwaysShowHeader="True"
+    PaneDisplayMode="Left" 
+    ExpandedModeThresholdWidth="500"
+    SelectionFollowsFocus="Disabled"
+    IsTabStop="False">
+
+
+            <WinUI:NavigationView.MenuItems>
+                <WinUI:NavigationViewItem Content="General" Tag="General">
+                    <WinUI:NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE713;"/>
+                    </WinUI:NavigationViewItem.Icon>
+                </WinUI:NavigationViewItem>
+                <WinUI:NavigationViewItem Content="FancyZones" Tag="FancyZones">
+                    <WinUI:NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xED35;"/>
+                    </WinUI:NavigationViewItem.Icon>
+                </WinUI:NavigationViewItem>
+                <WinUI:NavigationViewItem Content="Power Rename" Tag="PowerRename">
+                    <WinUI:NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE8AC;"/>
+                    </WinUI:NavigationViewItem.Icon>
+                </WinUI:NavigationViewItem>
+                <WinUI:NavigationViewItem Content="Shortcuts Guide" Tag="Shortcuts">
+                    <WinUI:NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xEDA7;"/>
+                    </WinUI:NavigationViewItem.Icon>
+                </WinUI:NavigationViewItem>
+                <WinUI:NavigationViewItem Content="Power Launcher" Tag="PowerLauncher">
+                    <WinUI:NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xE8A7;"/>
+                    </WinUI:NavigationViewItem.Icon>
+                </WinUI:NavigationViewItem>
+            </WinUI:NavigationView.MenuItems>
+            <Frame x:Name="contentFrame" />
+        </WinUI:NavigationView>
+        <TextBlock Text="PowerToys Settings" FontSize="12" Margin="12,8,0,0" VerticalAlignment="Top" />
+    </Grid>
+</Page>
