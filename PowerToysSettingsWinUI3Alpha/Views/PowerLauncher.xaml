@@ -27,7 +27,6 @@
                 </ComboBox>
                 <TextBox Text="4" Header="Maximum numbers of results"  HorizontalAlignment="Left" MinWidth="240" Margin="0,14,0,0"/>
 
-
                 <TextBlock Text="Default apps" Style="{StaticResource SubtitleTextBlockStyle}" Margin="0,34,0,8"/>
                 <ComboBox Header="Shell" SelectedIndex="0" MinWidth="240" Margin="0,14,0,0">
                     <ComboBoxItem>PowerShell</ComboBoxItem>
