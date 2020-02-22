@@ -120,6 +120,9 @@
     <Compile Include="Views\General.xaml.cs">
       <DependentUpon>General.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\AutomaticWallpaper.xaml.cs">
+      <DependentUpon>AutomaticWallpaper.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\PowerLauncher.xaml.cs">
       <DependentUpon>PowerLauncher.xaml</DependentUpon>
     </Compile>
@@ -158,6 +161,10 @@
     <Page Include="Views\General.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\AutomaticWallpaper.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\PowerLauncher.xaml">
       <SubType>Designer</SubType>

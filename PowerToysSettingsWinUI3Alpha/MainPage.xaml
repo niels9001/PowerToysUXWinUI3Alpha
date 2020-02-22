@@ -49,6 +49,11 @@
                         <FontIcon Glyph="&#xE8A7;"/>
                     </WinUI:NavigationViewItem.Icon>
                 </WinUI:NavigationViewItem>
+                <WinUI:NavigationViewItem Content="Bing daily wallpaper" Tag="Wallpaper">
+                    <WinUI:NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xEB9F;"/>
+                    </WinUI:NavigationViewItem.Icon>
+                </WinUI:NavigationViewItem>
             </WinUI:NavigationView.MenuItems>
             <Frame x:Name="contentFrame" />
         </WinUI:NavigationView>
