@@ -54,6 +54,11 @@
                         <FontIcon Glyph="&#xEB9F;"/>
                     </WinUI:NavigationViewItem.Icon>
                 </WinUI:NavigationViewItem>
+                <WinUI:NavigationViewItem Content="Auto theming" Tag="NightLight">
+                    <WinUI:NavigationViewItem.Icon>
+                        <FontIcon Glyph="&#xEA80;"/>
+                    </WinUI:NavigationViewItem.Icon>
+                </WinUI:NavigationViewItem>
             </WinUI:NavigationView.MenuItems>
             <Frame x:Name="contentFrame" />
         </WinUI:NavigationView>

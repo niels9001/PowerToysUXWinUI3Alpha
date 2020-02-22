@@ -39,6 +39,7 @@ namespace PowerToysSettingsWinUI3Alpha
                 case "Shortcuts": contentFrame.Navigate(typeof(Shortcuts)); NavView.Header = "Shortcuts Guide"; break;
                 case "PowerLauncher": contentFrame.Navigate(typeof(PowerLauncher)); NavView.Header = "Power Launcher"; break;
                 case "Wallpaper": contentFrame.Navigate(typeof(AutomaticWallpaper)); NavView.Header = "Bing daily wallpaper"; break;
+                case "NightLight": contentFrame.Navigate(typeof(NightLight)); NavView.Header = "Auto theming"; break;
             }
         }
     }

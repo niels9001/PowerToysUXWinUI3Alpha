@@ -1,0 +1,37 @@
+﻿<Page
+    x:Class="PowerToysSettingsWinUI3Alpha.Views.NightLight"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PowerToysSettingsWinUI3Alpha.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Loaded="Page_Loaded"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <ScrollViewer>
+            <StackPanel Orientation="Vertical" Margin="14,0,14,48">
+                <TextBlock Text="Automatically switch OS and app themes based on sunrise/sunset or at specific times" Style="{StaticResource BodyTextBlockStyle}"/>
+                <HyperlinkButton x:Name="OverviewBtn" Content="Overview" />
+                <ComboBox Header="Choose what modes will be changed" SelectedIndex="0" MinWidth="240" Margin="0,34,0,0">
+                    <ComboBoxItem>Both shell and apps</ComboBoxItem>
+                    <ComboBoxItem>Shell only</ComboBoxItem>
+                    <ComboBoxItem>Apps only</ComboBoxItem>
+                </ComboBox>
+
+            
+                <TextBlock Text="Schedule" Style="{StaticResource SubtitleTextBlockStyle}" Margin="0,34,0,8"/>
+                    <ToggleSwitch Header="Schedule auto theming" x:Name="ScheduleSwitch" IsOn="True" Margin="0,14,0,0"/>
+                <StackPanel x:Name="TimePanel">
+                    <RadioButton Content="From sunrise to sunset" IsChecked="True" GroupName="Scheduling" Margin="0,14,0,0"/>
+                    <RadioButton Content="Set hours" GroupName="Scheduling" x:Name="CustomRadioButton" Checked="CustomRadioButton_Checked" Unchecked="CustomRadioButton_Unchecked" Margin="0,14,0,0"/>
+                    <StackPanel x:Name="CustomTimePanel" Visibility="Collapsed">
+                        <TimePicker Header="Turn on" Margin="0,14,0,0" Time="09:00" />
+                        <TimePicker Header="Turn on" Margin="0,14,0,0" Time="18:00" />
+                    </StackPanel>
+                </StackPanel>
+            
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</Page>
